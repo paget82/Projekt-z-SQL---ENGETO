@@ -7,7 +7,7 @@ Vaším úkolem je připravit robustní datové podklady, které umožní porovn
 
 Jako doplňující materiál je třeba zpracovat také tabulku s ukazateli **HDP, GINI koeficientu a populací** vybraných evropských států za stejné období, aby bylo možné poskytnout širší kontext k primární analýze pro Českou republiku.  
 
----
+
 
 Datové sady, které lze využít k získání potřebných podkladů:
 - **Primární tabulky:**
@@ -27,7 +27,7 @@ Datové sady, které lze využít k získání potřebných podkladů:
 - **Tabulka `Tab1 – primary final`** vznikla spojením tabulky cen potravin `czechia_price`, tabulky průměrných mezd v ČR `czechia_payroll`, tabulky cen potravin s detailním popisem `czechia_price_category` a tabulky pracovních kategorií `czechia_payroll_industry_branch`.  
 - **Tabulka `Tab2 – secondary final`** vznikla spojením tabulek `economies` a `countries`.
 
----
+
 
 ## Cíl:
 Cílem projektu je odpovědět na několik výzkumných otázek:
@@ -46,24 +46,24 @@ Cílem projektu je odpovědět na několik výzkumných otázek:
   - Zemědělství, lesnictví a rybářství – pokles v roce 2009.  
   - Činnosti v oblasti nemovitostí – pokles v letech 2009 a 2013.  
 
----
+
 
 ### 2. Kolik je možné si koupit litrů mléka a kilogramů chleba za průměrnou mzdu v prvním a posledním sledovaném období?
 - **2006:** 1314 chlebů a 1469 litrů mléka  
 - **2018:** 1367 chlebů a 1671 litrů mléka  
 
----
+
 
 ### 3. Která kategorie potravin zdražuje nejpomaleji (má nejnižší procentuální meziroční nárůst)?
 - Nejpomaleji zdražují **banány žluté** – růst pouze **0,81 %**.  
 
----
+
 
 ### 4. Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (více než 10 %)?
 - V poskytnutých datech **neexistuje** rok, kdy by nárůst cen potravin přesáhl 10 %.  
 - Nejvyšší zaznamenaný růst byl **7,1 % v roce 2013**.  
 
----
+
 
 ### 5. Má výše HDP vliv na změny ve mzdách a cenách potravin?
 - Po porovnání vývoje mezd a cen potravin lze konstatovat, že **neexistuje jednoznačná závislost** mezi růstem HDP a vývojem mezd či cen potravin.  
