@@ -1,6 +1,6 @@
 # Projekt z SQL
 
-## Úvod do projektu
+## Úvod do projektu:
 V analytickém oddělení nezávislé společnosti, která se zabývá zkoumáním životní úrovně obyvatel, jste se rozhodli zaměřit na několik výzkumných otázek souvisejících s dostupností základních potravin pro širokou veřejnost. Tyto otázky již byly definovány a cílem je připravit podklady, které umožní poskytnout relevantní odpovědi. Výsledky budou následně prezentovány tiskovým oddělením na nadcházející konferenci zaměřené na tuto problematiku.
 
 Vaším úkolem je připravit robustní datové podklady, které umožní porovnat dostupnost vybraných potravin v kontextu průměrných příjmů za sledované časové období.  
@@ -9,7 +9,6 @@ Jako doplňující materiál je třeba zpracovat také tabulku s ukazateli **HDP
 
 ---
 
-### Datové sady
 Datové sady, které lze využít k získání potřebných podkladů:
 - **Primární tabulky:**
   - `czechia_payroll` – Informace o mzdách v různých odvětvích za několikaleté období. Datová sada pochází z Portálu otevřených dat ČR.
@@ -30,7 +29,7 @@ Datové sady, které lze využít k získání potřebných podkladů:
 
 ---
 
-## Cíl
+## Cíl:
 Cílem projektu je odpovědět na několik výzkumných otázek:
 
 ### 1. Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
