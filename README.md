@@ -1,12 +1,12 @@
 # Projekt z SQL
 
+
 ## Úvod do projektu:
 V analytickém oddělení nezávislé společnosti, která se zabývá zkoumáním životní úrovně obyvatel, jste se rozhodli zaměřit na několik výzkumných otázek souvisejících s dostupností základních potravin pro širokou veřejnost. Tyto otázky již byly definovány a cílem je připravit podklady, které umožní poskytnout relevantní odpovědi. Výsledky budou následně prezentovány tiskovým oddělením na nadcházející konferenci zaměřené na tuto problematiku.
 
 Vaším úkolem je připravit robustní datové podklady, které umožní porovnat dostupnost vybraných potravin v kontextu průměrných příjmů za sledované časové období.  
 
 Jako doplňující materiál je třeba zpracovat také tabulku s ukazateli **HDP, GINI koeficientu a populací** vybraných evropských států za stejné období, aby bylo možné poskytnout širší kontext k primární analýze pro Českou republiku.  
-
 
 
 Datové sady, které lze využít k získání potřebných podkladů:
@@ -28,7 +28,6 @@ Datové sady, které lze využít k získání potřebných podkladů:
 - **Tabulka `Tab2 – secondary final`** vznikla spojením tabulek `economies` a `countries`.
 
 
-
 ## Cíl:
 Cílem projektu je odpovědět na několik výzkumných otázek:
 
@@ -47,22 +46,18 @@ Cílem projektu je odpovědět na několik výzkumných otázek:
   - Činnosti v oblasti nemovitostí – pokles v letech 2009 a 2013.  
 
 
-
 ### 2. Kolik je možné si koupit litrů mléka a kilogramů chleba za průměrnou mzdu v prvním a posledním sledovaném období?
 - **2006:** 1314 chlebů a 1469 litrů mléka  
 - **2018:** 1367 chlebů a 1671 litrů mléka  
-
 
 
 ### 3. Která kategorie potravin zdražuje nejpomaleji (má nejnižší procentuální meziroční nárůst)?
 - Nejpomaleji zdražují **banány žluté** – růst pouze **0,81 %**.  
 
 
-
 ### 4. Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (více než 10 %)?
 - V poskytnutých datech **neexistuje** rok, kdy by nárůst cen potravin přesáhl 10 %.  
 - Nejvyšší zaznamenaný růst byl **7,1 % v roce 2013**.  
-
 
 
 ### 5. Má výše HDP vliv na změny ve mzdách a cenách potravin?
