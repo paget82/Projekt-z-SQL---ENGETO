@@ -17,9 +17,9 @@ select
     lag(average_salary) over (partition by industry order by payroll_year) as average_salary_last_year,
     average_salary - lag(average_salary) over (partition by industry order by payroll_year) as difference,
     case 
-	    	when average_salary - lag(average_salary) over (partition by industry order by payroll_year)> 0 then 'i'
+	    	when average_salary - lag(average_salary) over (partition by industry order by payroll_year)> 0 then 'increases'
 		    when average_salary - lag(average_salary) over (partition by industry order by payroll_year)= 0 then 'stagnates'
 		    when average_salary - lag(average_salary) over (partition by industry order by payroll_year)< 0 then 'decreases'
-		    else 'Unknown'
+		    else 'unknown'
 end as trend
     from List
