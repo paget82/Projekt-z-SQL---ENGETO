@@ -18,8 +18,8 @@ yoy_growth AS (
 		ROUND((avg_price -  LAG(avg_price) OVER (PARTITION BY food_category ORDER BY payroll_year)) / 
 		NULLIF(LAG(avg_price) OVER (PARTITION BY food_category ORDER BY payroll_year), 0) * 100, 2) AS yoy_growth_percent
 	FROM avg_prices
-
 )
+
 SELECT 
 	food_category,
 	ROUND(AVG(yoy_growth_percent), 2) AS avg_growth
