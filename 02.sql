@@ -1,36 +1,40 @@
 --2. Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
 
-with Year_Income as(   
-	select 
+WITH year_income AS (   
+	SELECT 
 		payroll_year,
-		trunc(avg(average_wages)::numeric, 0)as average_salary
-	from t_patrik_pagac_project_SQL_primary_final
-	where calculation_code=200
-	group by payroll_year
+		TRUNC(AVG(average_wages)::NUMERIC, 0) AS average_salary
+	FROM t_patrik_pagac_project_SQL_primary_final
+	WHERE calculation_code = 200
+	GROUP BY payroll_year
 ),
-Milk_Bread as(
-	select  
+
+milk_bread AS (
+	SELECT  
 		food_category,
-		round(avg(	price)::numeric, 1)as average_price,
+		ROUND(AVG(price)::NUMERIC, 1) AS average_price,
 		payroll_year
-	from t_patrik_pagac_project_SQL_primary_final
-	where 1=1
-		and food_category in ('Chléb konzumní kmínový', 'Mléko polotučné pasterované')
-	group by payroll_year, food_category
+	FROM t_patrik_pagac_project_SQL_primary_final
+	WHERE food_category IN ('Chléb konzumní kmínový', 'Mléko polotučné pasterované')
+	GROUP BY payroll_year, food_category
 ),
-Years_Range as(
-	select min(payroll_year)as min_year,
-			   max(payroll_year)as max_year
-	from Milk_Bread
+
+years_range AS (
+	SELECT 
+		MIN(payroll_year) AS min_year,
+		MAX(payroll_year) AS max_year
+	FROM milk_bread
 )
-select 
+
+SELECT
 	m.food_category,
 	m.payroll_year,
 	y.average_salary,
-	 m.average_price,
-	trunc((average_salary/ 	average_price) ,0) as count
-from Milk_Bread m
-join Year_Income y
-on y.payroll_year=m.payroll_year
-join Years_Range r
-on m.payroll_year=r.min_year or m.payroll_year=r.max_year
+	m.average_price,
+	TRUNC((y.average_salary / m.average_price), 0) AS count
+FROM milk_bread AS m
+JOIN year_income AS y
+	ON y.payroll_year = m.payroll_year
+JOIN years_range AS r
+	ON m.payroll_year = r.min_year 
+	OR m.payroll_year = r.max_year;
